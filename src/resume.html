@@ -1,9 +1,10 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Nicholas Thomson - Resume</title>
-    <link rel='stylesheet' type='text/css' href='../reset.css' />
+    <link rel='stylesheet' type='text/css' href='reset.css' />
     <style type='text/css'>
         a {
             color: #08c;
@@ -15,8 +16,8 @@
         body {
             background: #eee;
             font-family: arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.25;
+            font-size: 13px;
+            line-height: 1.2;
         }
         .contain {
             width: 700px;
@@ -36,32 +37,38 @@
                 font-size: 1.2em;
                 font-weight: bold;
                 margin: 10px 0;
+                margin-top: 0;
                 border-bottom: 1px #999 solid;
                 padding-bottom: 5px;
             }
             .institution {
-                margin-bottom: 25px;
+                /*margin-bottom: 25px;*/
                 margin-left: 5px;
             }
                 .institution-info {
                     position: relative;
-
                     font-weight: bold;
                 }
                     .institution-name {
                         text-align: left;
+                        font-size: 1.25em;
                     }
-                    .institution-dates {
+                    .institution-dates, .position-dates {
                         position: absolute;
                         right: 0;
                     }
                 .institution-position {
-                    margin:10px;
+                    margin: 10px;
+                    margin-bottom: 20px;
+                    position: relative;
+                    font-weight: bold;
                 }
                 .institution-achievements {
                     margin-left: 35px;
+                    margin-bottom: 20px;
                     list-style-type: disc;
                 }
+
         .pdf-version {
             text-align: center;
             margin-bottom: 20px;
@@ -69,6 +76,10 @@
         @media print {
             .contain {
                 border: 0;
+                margin: 0;
+            }
+            h1 {
+                margin: 15px;
             }
             .pdf-version {
                 display: none;
@@ -81,7 +92,7 @@
         <div class='contact-info'>
             <ul>
                 <li><a href='tel:4074341214'>(407) 434-1214</a></li>
-                <li><a href='mailto:_@nthomson.com'>_@nthomson.com</a></li>
+                <li><a href='mailto:nthomsondev@gmail.com'>nthomsondev@gmail.com</a></li>
                 <li><a href='http://nthomson.com'>http://nthomson.com</a></li>
             </ul>
         </div>
@@ -94,7 +105,8 @@
                     <li>HTML5, CSS3</li>
                     <li>Rails, AngularJS, jQuery, NodeJS, D3.js</li>
                     <li>JSON, XML, YAML</li>
-                    <li>Vagrant, Grunt, Rake, Bower, Bundler</li>
+                    <li>Vagrant, Grunt, Gulp, Rake, NPM, Bundler</li>
+                    <li>Git, Github, Unix, Linux</li>
                 </ul>
             </div>
         </div>
@@ -103,14 +115,26 @@
             <div class='institution'>
                 <div class='institution-info'>
                     <span class='institution-name'>Cloudspace</span>
-                    <span class='institution-dates'>November 2012 - Present</span>
                 </div>
-                <div class='institution-position'>Software Engineer</div>
+                <div class='institution-position'>
+                    <span class='position-name'>Engineering Manager</span>
+                    <span class='position-dates'>November 2015 - Present</span>
+                </div>
+                <ul class='institution-achievements'>
+                  <li>As Engineering Manager I was responsible for the success of the rest of the Engineers within the company.</li>
+                  <li>Designed and Implemented coding standards, processes, and documentation for the overall Engineering Team.</li>
+                  <li>Responsible for communicating client specifications to other members of my dev team.</li>
+                  <li>Handled Engineering-facing client relationships by estimating work, and estimating sales meetings.</li>
+                </ul>
+                <div class='institution-position'>
+                    <span class='position-name'>Software Engineer</span>
+                    <span class='position-dates'>November 2012 - Present</span>
+                </div>
                 <ul class='institution-achievements'>
                   <li>Worked in an agile-styled environment using Github and Pivotal Tracker for collaboration.</li>
                   <li>Designed and implemented RESTful APIs in Ruby on Rails.</li>
-                  <li>Implemented web frontends in various technologies on top of internally-built RESTful APIs.</li>
-                  <li>Built a Crunchbase visualization tool along with other internal tools using AngularJS and D3.</li>
+                  <li>Implemented web UIs in various technologies on top of internally-built RESTful APIs.</li>
+                  <li>Built a Crunchbase visualization tool along with other internal tools using AngularJS and D3.js</li>
                   <li>Worked with clients to translate requirements into full-featured web apps.</li>
                 </ul>
             </div>
@@ -118,9 +142,11 @@
             <div class='institution'>
                 <div class='institution-info'>
                     <span class='institution-name'>StackFrame, LLC</span>
-                    <span class='institution-dates'>June 2009 - November 2012</span>
                 </div>
-                <div class='institution-position'>Developer</div>
+                <div class='institution-position'>
+                    <span class='position-name'>Developer</span>
+                    <span class='position-dates'>June 2009 - November 2012</span>
+                </div>
                 <ul class='institution-achievements'>
                     <li>Created and maintained various web applications using J2EE, .NET and Django.</li>
                     <li>Created applications to interact with cloud-based APIs and services including AWS, Tropo, and Twilio.</li>
@@ -132,9 +158,11 @@
             <div class='institution'>
                 <div class='institution-info'>
                     <span class='institution-name'>Vcom3D, Inc.</span>
-                    <span class='institution-dates'>June 2008 - June 2009</span>
                 </div>
-                <div class='institution-position'>Intern</div>
+                <div class='institution-position'>
+                    <span class='position-name'>Intern</span>
+                    <span class='position-dates'>June 2008 - June 2009</span>
+                </div>
                 <ul class='institution-achievements'>
                     <li>Maintained code for developers previously employed by the company.</li>
                     <li>Worked with company employees to ship software in a completed state and on time.</li>
@@ -150,23 +178,9 @@
                 <span class='institution-name'>Crooms Academy of Information Technology</span>
                 <span class='institution-dates'>August 2005 - June 2009</span>
             </div>
-            <div class='institution-position'>High School Diploma</div>
           </div>
         </div>
     </div>
-    <div class='pdf-version'><a href='/resume.pdf'>Download PDF Version</a></div>
+    <div class='pdf-version'><a href='resume.pdf'>Download PDF Version</a></div>
 </body>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37187662-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </html>
